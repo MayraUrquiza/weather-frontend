@@ -7,6 +7,7 @@ Presenta de manera visual la ciudad actual de acuerdo a la ip desde la que se co
 https://github.com/MayraUrquiza/weather-frontend
 
 ![alt text](src/assets/weather-frontend-preview.png)
+![alt text](src/assets/weather-frontend-preview-2.png)
 
 ## Construido con
 
