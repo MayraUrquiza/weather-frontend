@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "@/store";
 import { getCurrentLocation } from "@/store/actions/cities";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { CONFIG } from "@/config/defaults";
 import { CitiesCombobox } from "./citiesCombobox";
 import { CitiesCardItem } from "./citiesCardItem";
 
@@ -18,7 +19,7 @@ export const CitiesCard = () => {
     <Card className="p-4">
       <CardHeader>
         <CardTitle>Ciudades</CardTitle>
-        {cities.length < 5 && <CitiesCombobox />}
+        {cities.length < CONFIG.CITIES_LIMIT + 1 && <CitiesCombobox />}
       </CardHeader>
       <CardContent className="text-left">
         {cities.map((city) => (
